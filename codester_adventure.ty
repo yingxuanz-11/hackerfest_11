@@ -1,1 +1,32 @@
+print("Title of program: Personality Test (with a twist!) ")
+print()
+print("Welcome to DHS! Please answer the following questions truthfully and we'll suggest which food in the canteen suits your personality!")
+print("Please respond with a number 1 - 5, where 1 is strongly disagree and 5 is strongly agree.")
+print()
+
+laksa1 = input("I get agitated on a daily basis.")
+
+waffles1 = input("I always go out of my way to help my friends.")
+
+kimchi fried rice1 = input("My friends don't know half of what I am really like.")
+
+laksa2 = input("I love gossiping about my friends!")
+
+waffles2 = input("I am grateful for the things around me!")
+
+kimchi fried rice2 = input("I am always the most talkative one of the group.")
+
+
+laksa_final = int(laksa1) + int(laksa2)
+waffles_final = int(waffles1) + int(waffles2)
+kimchi fried rice_final = int(kimchi fried rice1)+ int(kimchi fried rice2)
+
+print()
+
+if laksa_final > waffles_final and laksa_final > kimchi fried rice_final:
+  print("You are compatible with Laksa from the Thai Stall!")
+elif waffles_final > kimchi fried rice_final:
+  print("You are compatible with Waffles from the Desert Stall!")
+else:
+  print("You are compatible with Kimchi Fried Rice from the Korean Stall!")
 
